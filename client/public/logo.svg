@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+  <circle cx="250" cy="250" r="240" fill="#fff" stroke="#0047AB" stroke-width="20"/>
+  <path d="M250 50C138.5 50 48.5 140 48.5 251.5S138.5 453 250 453s201.5-90 201.5-201.5S361.5 50 250 50zm0 370c-92.6 0-168-75.4-168-168S157.4 84 250 84s168 75.4 168 168-75.4 168-168 168z" fill="#0047AB"/>
+  <path d="M180 170c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40zm140 0c-22.1 0-40 17.9-40 40s17.9 40 40 40 40-17.9 40-40-17.9-40-40-40z" fill="#0047AB"/>
+  <path d="M320 300H180c-11 0-20 9-20 20s9 20 20 20h140c11 0 20-9 20-20s-9-20-20-20z" fill="#0047AB"/>
+  <text x="250" y="480" text-anchor="middle" font-family="Arial" font-weight="bold" font-size="24" fill="#0047AB">Computer Association of NBT</text>
+</svg>

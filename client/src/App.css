@@ -1,0 +1,139 @@
+/* App.css - Apple风格 */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.apple-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.chat-message {
+  animation: slideIn 0.3s ease-out;
+  transition: all 0.3s ease;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.user-message {
+  background: linear-gradient(135deg, #FFE4E1 0%, #FFF0F5 100%);
+  color: #333;
+  border-left: none;
+  transform-origin: right center;
+  animation: slideIn 0.3s ease-out, bounce 0.5s ease-out;
+}
+
+.user-message::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid #FFA07A;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.user-message::after {
+  content: '';
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid #FFA07A;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.assistant-message {
+  background: linear-gradient(135deg, #E6E6FA 0%, #87CEEB 100%);
+  color: #333;
+  border-left: none;
+  transform-origin: left center;
+  animation: slideIn 0.3s ease-out, bounce 0.5s ease-out;
+}
+
+.assistant-message::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-right: 8px solid #87CEEB;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.assistant-message::after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-right: 8px solid #87CEEB;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+.message-content p {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'San Francisco', 'Helvetica Neue', sans-serif;
+}
+
+.message-content p:last-child {
+  margin-bottom: 0;
+}
+
+.message-content pre {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  overflow-x: auto;
+  margin: 1rem 0;
+  font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.message-content code {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.2rem 0.4rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  color: white;
+}
+
+.message-content pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+.message-content a {
+  color: white;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+.message-content a:hover {
+  text-decoration-thickness: 2px;
+}
